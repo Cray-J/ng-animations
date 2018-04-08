@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Tips
+:host - Targets the element which hosts the Component
+:host() - host function form: allows conditions
+:host-context - Style elements inside a component, depending on some condition set outside of it
+/deep/ - Apply styles not just to the elements in the template but also to child components
+
+
+## ngClass
+[ngClass]="{class1: condition}"
+[ngClass]="'class1 class2'"
+[ngClass]="[class1 class2]"
+[ngClass]="{'class1 class2': condition}"
+Or use any expression (e.g. function call) which returns one of the valid values!
+
+## ngStyle
+[ngStyle]="{'background-color': 'red'}"
+[ngStyle]="{'width.px': 200}"
