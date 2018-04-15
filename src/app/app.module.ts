@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { GoalComponent } from './goal/goal.component';
 import { QuoteComponent } from './quote/quote.component';
 import { AuthorComponent } from './author/author.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AuthorComponent } from './author/author.component';
     AuthorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
